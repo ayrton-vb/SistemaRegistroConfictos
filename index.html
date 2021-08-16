@@ -11,13 +11,13 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a style="margin-left: 20px; margin-right: 50px;" class="navbar-brand" href="#">Logo</a>
+          <img id="logo" src="/imagenes/logo des.jpg" alt="logo" >
+          <a style="margin-left: 20px; margin-right: 50px;" class="navbar-brand" href="#">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
               <a class="nav-link" href="#">Preguntas</a>
               <a class="nav-link" href="#">Contacto</a>
             </div>
@@ -25,25 +25,71 @@
         </div>
       </nav>
       <h1>Formulario de registro de conflictos sociales</h1>
-<div id="container">
-    <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+
+    <label class="groupName" for="">Datos Generales</label>
+<div style="border: 1px solid lightgray;" id="container">
+  
+  <div  class="row">
+    <div class="col">
+      <label for="">Area</label>
+      <input type="text" >
+    </div>
+    <div class="col">
+      <label for="">Ambito geografico</label>
+      <input type="text" value="">
+    </div>
+    <div class="col">
+      <label for="">Distrito</label>
+      <select name="" id="">
+        <option value="">Seleccione</option>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+        <option value="">6</option>
+        <option value="">7</option>
+        <option value="">8</option>
+        <option value="">9</option>
+        <option value="">10</option>
+        <option value="">11</option>
+        <option value="">12</option>
+        <option value="">13</option>
+      </select>
+      <label for="">Interdistrito</label>
+      <select name="" id="">
+        <option value="">Seleccione</option>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+        <option value="">6</option>
+        <option value="">7</option>
+        <option value="">8</option>
+        <option value="">9</option>
+        <option value="">10</option>
+        <option value="">11</option>
+        <option value="">12</option>
+        <option value="">13</option>
+      </select>  
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+        <label for="">Zona, barrio, urbanizacion o comunidad</label>
+        <input type="text" value="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="">Nombre del conflicto</label>
+        <input type="text" value="">
+      </div>
+    </div>
+
 </div>
-      
 </body>
 <script src="/script.js"></script>
 </html>

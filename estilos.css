@@ -9,5 +9,27 @@ h1{
 #container{
     margin-left: 100px;
     margin-right: 100px;
-    
+    padding: 5px;    
+}
+
+#logo{
+    width: 100px;
+    height: 50px;
+}
+
+.group{
+    border: 1px solid lightgray;
+}
+
+select{
+    width: 100px;
+}
+
+div .row{
+margin-top: 15px;
+}
+
+.groupName{
+    margin-left: 100px;
+    color: grey;
 }
