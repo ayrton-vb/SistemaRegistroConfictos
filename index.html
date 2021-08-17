@@ -9,7 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-  <h1>prueba</h1>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <img id="logo" src="/imagenes/logo des.jpg" alt="logo" >
@@ -27,17 +26,30 @@
       </nav>
       <h1>Formulario de registro de conflictos sociales</h1>
 
-    <label class="groupName" for="">Datos Generales</label>
-<div style="border: 1px solid lightgray;" id="container">
+<!-- grupo datos generales -->
+
+<label class="groupName" for="">1. Datos Generales</label>
+<div class="containerStyle" id="container">
   
   <div  class="row">
     <div class="col">
       <label for="">Area</label>
-      <input type="text" >
+      <select name="" id="">
+        <option value="">Seleccione</option>
+        <option value="">Rural</option>
+        <option value="">Urbano</option>
+      </select>
     </div>
     <div class="col">
       <label for="">Ambito geografico</label>
-      <input type="text" value="">
+      <select name="" id="">
+        <option value="">Seleccione</option>
+        <option value="">Barrio/Zona/Urbanización</option>
+        <option value="">Comunidad</option>
+        <option value="">Distrito</option>
+        <option value="">Interdistritos</option>
+        <option value="">Intermunicipal</option>
+      </select>
     </div>
     <div class="col">
       <label for="">Distrito</label>
@@ -57,6 +69,9 @@
         <option value="">12</option>
         <option value="">13</option>
       </select>
+      
+    </div>
+    <div class="col">
       <label for="">Interdistrito</label>
       <select name="" id="">
         <option value="">Seleccione</option>
@@ -73,13 +88,18 @@
         <option value="">11</option>
         <option value="">12</option>
         <option value="">13</option>
-      </select>  
+      </select> 
     </div>
-
-
+ 
     <div class="row">
       <div class="col">
         <label for="">Zona, barrio, urbanizacion o comunidad</label>
+        <input type="text" value="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="">Distrito/s, Municipio/s</label>
         <input type="text" value="">
       </div>
     </div>
@@ -89,8 +109,235 @@
         <input type="text" value="">
       </div>
     </div>
+  </div>
 
 </div>
+
+<!-- descripcion breve -->
+<label class="groupName" for="">2. Breve descripcion del conflicto</label>
+<div class="containerStyle" id="container">
+    <div class="row">
+      <div class="col">
+        <label for="">Descripcion</label>
+        <input type="text" value="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="">Tipo de conflicto</label>
+        <select name="" class="selectBig">
+          <option value="">Seleccione</option>
+          <option value="">Acceso a servicios</option>
+          <option value="">Ambiental</option>
+          <option value="">Defensa de propiedad municipal</option>
+          <option value="">Económico productivo</option>
+          <option value="">Gestión Institucional</option>
+          <option value="">Organizativo Vecinal</option>
+          <option value="">Político</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label for="">Problema Social (Detonante del conflicto):</label>
+        <select name="" class="selectBig">
+          <option value="">Seleccione</option>
+          <option value="">Conflictos organizacionales</option>
+          <option value="">Defensa de derechos</option>
+          <option value="">Incumplimiento de acuerdo</option>
+          <option value="">Prob. Socioambientales</option>
+          <option value="">Prob. Socioeconómicos</option>
+          <option value="">Solicitud con Hoja de Ruta No Atendida</option>
+          <option value="">Transporte público</option>
+          <option value="">Uso de vías públicas</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Organizaciones o Instituciones involucradas-->
+  <label class="groupName" for="">3. Organizaciones o instituciones involucradas</label>
+  <div class="containerStyle" id="container">
+      <div class="row">
+        <div class="col-4">
+          <label for="">Organizacion demandada</label>
+          <select class="selectMedium" name="" id="">
+            <option value="">Seleccione</option>
+            <option value="">Artesanos</option>
+            <option value="">Comerciantes</option>
+            <option value="">Empresarios</option>
+            <option value="">Transportistas</option>
+            <option value="">Vecinos</option>
+            <option value="">Comunarios</option>
+            <option value="">Junta de vecinos</option>
+            <option value="">Junta de V. Paral</option>
+            <option value="">Comunidad</option>
+            <option value="">Cont. Social Paral</option>
+            <option value="">Cont. Social</option>
+            <option value="">FEJUVE paral</option>
+            <option value="">FEJUVE</option>
+            <option value="">Club de Madres</option>
+            <option value="">Discapacitados</option>
+            <option value="">Inst. def. derechos</option>
+            <option value="">Jóvenes</option>
+            <option value="">LGTTB</option>
+            <option value="">P. de familia</option>
+            <option value="">Otros</option>
+          </select>
+        </div>
+        <div class="col-5">
+          <label for="">Nombre de organizacion</label>
+          <input style="width: 300px;" type="text" value="">
+        </div>
+
+        <div class="col-3">
+          <label for="">Tipo</label>
+          <input style="width: 250px;" type="text" value="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <label for="">Organizacion demandada</label>
+          <select class="selectMedium" name="" id="">
+            <option value="">Seleccione</option>
+            <option value="">Artesanos</option>
+            <option value="">Comerciantes</option>
+            <option value="">Empresarios</option>
+            <option value="">Transportistas</option>
+            <option value="">Vecinos</option>
+            <option value="">Comunarios</option>
+            <option value="">Junta de vecinos</option>
+            <option value="">Junta de V. Paral</option>
+            <option value="">Comunidad</option>
+            <option value="">Cont. Social Paral</option>
+            <option value="">Cont. Social</option>
+            <option value="">FEJUVE paral</option>
+            <option value="">FEJUVE</option>
+            <option value="">Club de Madres</option>
+            <option value="">Discapacitados</option>
+            <option value="">Inst. def. derechos</option>
+            <option value="">Jóvenes</option>
+            <option value="">LGTTB</option>
+            <option value="">P. de familia</option>
+            <option value="">Otros</option>
+          </select>
+        </div>
+        <div class="col-5">
+          <label for="">Nombre de organizacion</label>
+          <input style="width: 300px;" type="text" value="">
+        </div>
+
+        <div class="col-3">
+          <label for="">Tipo</label>
+          <input style="width: 250px;" type="text" value="">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-4">
+          <label for="">Organizacion demandada</label>
+          <select class="selectMedium" name="" id="">
+            <option value="">Seleccione</option>
+            <option value="">Artesanos</option>
+            <option value="">Comerciantes</option>
+            <option value="">Empresarios</option>
+            <option value="">Transportistas</option>
+            <option value="">Vecinos</option>
+            <option value="">Comunarios</option>
+            <option value="">Junta de vecinos</option>
+            <option value="">Junta de V. Paral</option>
+            <option value="">Comunidad</option>
+            <option value="">Cont. Social Paral</option>
+            <option value="">Cont. Social</option>
+            <option value="">FEJUVE paral</option>
+            <option value="">FEJUVE</option>
+            <option value="">Club de Madres</option>
+            <option value="">Discapacitados</option>
+            <option value="">Inst. def. derechos</option>
+            <option value="">Jóvenes</option>
+            <option value="">LGTTB</option>
+            <option value="">P. de familia</option>
+            <option value="">Otros</option>
+          </select>
+        </div>
+        <div class="col-5">
+          <label for="">Nombre de organizacion</label>
+          <input style="width: 300px;" type="text" value="">
+        </div>
+
+        <div class="col-3">
+          <label for="">Tipo</label>
+          <input style="width: 250px;" type="text" value="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <label for="">Organizacion demandada</label>
+          <select class="selectMedium" name="" id="">
+            <option value="">Seleccione</option>
+            <option value="">Artesanos</option>
+            <option value="">Comerciantes</option>
+            <option value="">Empresarios</option>
+            <option value="">Transportistas</option>
+            <option value="">Vecinos</option>
+            <option value="">Comunarios</option>
+            <option value="">Junta de vecinos</option>
+            <option value="">Junta de V. Paral</option>
+            <option value="">Comunidad</option>
+            <option value="">Cont. Social Paral</option>
+            <option value="">Cont. Social</option>
+            <option value="">FEJUVE paral</option>
+            <option value="">FEJUVE</option>
+            <option value="">Club de Madres</option>
+            <option value="">Discapacitados</option>
+            <option value="">Inst. def. derechos</option>
+            <option value="">Jóvenes</option>
+            <option value="">LGTTB</option>
+            <option value="">P. de familia</option>
+            <option value="">Otros</option>
+          </select>
+        </div>
+        <div class="col-5">
+          <label for="">Nombre de organizacion</label>
+          <input style="width: 300px;" type="text" value="">
+        </div>
+
+        <div class="col-3">
+          <label for="">Tipo</label>
+          <input style="width: 250px;" type="text" value="">
+        </div>
+      </div>
+  </div>
+
+  <!-- Gestion del conflicto -->
+    <label class="groupName" for="">4. Organizaciones o instituciones involucradas</label>
+  <div class="containerStyle" id="container">
+      <div class="row">
+        <div class="col">
+          <label for="">Descripcion</label>
+          <input type="text" value="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="">Tipo de conflicto</label>
+          <input type="text" value="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="">Problema Social</label>
+          <input type="text" value="">
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+
 </body>
 <script src="/script.js"></script>
 </html>
