@@ -32,18 +32,18 @@
 <div class="containerStyle" id="container">
   
   <div  class="row">
-    <div class="col">
+    <div class="col-3">
       <label for="">Area</label>
-      <select name="" id="">
-        <option value="">Seleccione</option>
+      <select name="" id="selectArea" class="Vacio">
+        <option value="Seleccione">Seleccione</option>
         <option value="">Rural</option>
         <option value="">Urbano</option>
       </select>
     </div>
-    <div class="col">
+    <div class="col-4">
       <label for="">Ambito geografico</label>
-      <select name="" id="">
-        <option value="">Seleccione</option>
+      <select name="" id="selectAmbito" class="Vacio">
+        <option value="Seleccione">Seleccione</option>
         <option value="">Barrio/Zona/Urbanización</option>
         <option value="">Comunidad</option>
         <option value="">Distrito</option>
@@ -51,10 +51,10 @@
         <option value="">Intermunicipal</option>
       </select>
     </div>
-    <div class="col">
+    <div class="col-2">
       <label for="">Distrito</label>
-      <select name="" id="">
-        <option value="">Seleccione</option>
+      <select name="" id="selectDistrito"  class="selectSmall">
+        <option value="Seleccione">Seleccione</option>
         <option value="">1</option>
         <option value="">2</option>
         <option value="">3</option>
@@ -71,10 +71,10 @@
       </select>
       
     </div>
-    <div class="col">
+    <div class="col-3">
       <label for="">Interdistrito</label>
-      <select name="" id="">
-        <option value="">Seleccione</option>
+      <select name="" id="selectInterDistrito" class="selectSmall">
+        <option value="Seleccione">Seleccione</option>
         <option value="">1</option>
         <option value="">2</option>
         <option value="">3</option>
@@ -94,19 +94,19 @@
     <div class="row">
       <div class="col">
         <label for="">Zona, barrio, urbanizacion o comunidad</label>
-        <input type="text" value="">
+        <input class="Vacio" id="textZona" type="text" value="" placeholder=" Ej: Comunidad Originaria Ingenio">
       </div>
     </div>
     <div class="row">
       <div class="col">
         <label for="">Distrito/s, Municipio/s</label>
-        <input type="text" value="">
+        <input class="Vacio" id="textDistMuni" type="text" value="" placeholder="Ej: Distrito 4">
       </div>
     </div>
     <div class="row">
       <div class="col">
         <label for="">Nombre del conflicto</label>
-        <input type="text" value="">
+        <input class="Vacio" id="textConflicto" type="text" value="" placeholder="Ej: Conflicto por el traslado del Relleno Sanitario de Ingenio">
       </div>
     </div>
   </div>
@@ -119,7 +119,7 @@
     <div class="row">
       <div class="col">
         <label for="">Descripcion</label>
-        <input type="text" value="">
+        <input type="text" value="" placeholder="Resumen de hechos que hacen al conflicto">
       </div>
     </div>
     <div class="row">
@@ -187,7 +187,7 @@
         </div>
         <div class="col-5">
           <label for="">Nombre de organizacion</label>
-          <input style="width: 300px;" type="text" value="">
+          <input style="width: 300px;" type="text" value="" placeholder="Nombre especifico de la organizacion">
         </div>
 
         <div class="col-3">
@@ -225,7 +225,7 @@
         </div>
         <div class="col-5">
           <label for="">Nombre de organizacion</label>
-          <input style="width: 300px;" type="text" value="">
+          <input style="width: 300px;" type="text" value="" placeholder="Nombre especifico de la organizacion">
         </div>
 
         <div class="col-3">
@@ -263,7 +263,7 @@
         </div>
         <div class="col-5">
           <label for="">Nombre de organizacion</label>
-          <input style="width: 300px;" type="text" value="">
+          <input style="width: 300px;" type="text" value="" placeholder="Nombre especifico de la organizacion">
         </div>
 
         <div class="col-3">
@@ -296,7 +296,7 @@
         </div>
         <div class="col-8">
           <label for="">Detallar</label>
-          <input class="inputBig" type="text" value="">
+          <input class="inputBig" type="text" value="" placeholder="Especificar la Direccion, Unidad o Comision ">
         </div>
       </div>
   </div>
@@ -402,7 +402,7 @@
      <div class="containerStyle" id="container">
            <div class="row">
              <div class="col-12">
-               <label for="">¿ACTORES</label>
+               <label for="">ACTORES</label>
                <select class="selectMedium" name="" id="">
                 <option value="">Seleccione</option>
                 <option value="">Bases</option>
@@ -433,7 +433,7 @@
                <input type="text" value="">
              </div>
              <div class="col">
-              <label for="">¿Nº DE CELULAR</label>
+              <label for="">Nº DE CELULAR</label>
               <input type="text" value="">
              </div>
            </div>
@@ -444,7 +444,7 @@
               <input type="text" value="">
             </div>
             <div class="col">
-              <label for="">¿TIPO DE LIDER</label>
+              <label for="">TIPO DE LIDER</label>
               <select class="selectMedium" name="" id="">
                 <option value="">Seleccione</option>
                 <option value="">Proclive al dialogo</option>
@@ -455,6 +455,16 @@
     </div>
    
 
+ <!-- 5- Registro -->
+    <div id="container" style="margin-top: 10px;margin-bottom: 10px; ">
+          <div class="row" style="justify-content: center;">
+            <div class="col-8" >
+              <label>Contraseña Responsable del registro</label>
+              <input type="password" class="inputSmall">
+              <button id="buttonReg" type="button" >Registrar</button>
+            </div>
+          </div>
+    </div>
 
 
 

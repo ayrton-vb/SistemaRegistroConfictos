@@ -35,6 +35,9 @@ margin-bottom: 7px;
 input{
     width: 70%;
 }
+.inputSmall{
+    width: 30%;
+}
 
 .inputBig{
     width: ;
@@ -44,10 +47,15 @@ input{
     width: 320px;
 }
 
+.selectSmall{
+    width: 90px;
+}
+
 h1{
     color: #03c2fc;
 }
 
 .selectMedium{
     width: 200px;
+   
 }
