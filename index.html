@@ -73,7 +73,7 @@
     </div>
     <div class="col-3">
       <label for="">Interdistrito</label>
-      <select name="" id="selectInterDistrito" class="selectSmall Vacio">
+      <select name="" id="selectInterDistrito" class="selectSmall">
         <option value="Seleccione">Seleccione</option>
         <option value="">1</option>
         <option value="">2</option>
@@ -119,14 +119,14 @@
     <div class="row">
       <div class="col">
         <label for="">Descripcion</label>
-        <input type="text" value="" placeholder="Resumen de hechos que hacen al conflicto">
+        <input class="Vacio" id="textDescripcion" type="text" value="" placeholder="Resumen de hechos que hacen al conflicto">
       </div>
     </div>
     <div class="row">
       <div class="col">
         <label for="">Tipo de conflicto</label>
-        <select name="" class="selectBig">
-          <option value="">Seleccione</option>
+        <select id="selectTipoConfl" name="" class="selectBig Vacio">
+          <option value="Seleccione">Seleccione</option>
           <option value="">Acceso a servicios</option>
           <option value="">Ambiental</option>
           <option value="">Defensa de propiedad municipal</option>
@@ -140,8 +140,8 @@
     <div class="row">
       <div class="col">
         <label for="">Problema Social (Detonante del conflicto):</label>
-        <select name="" class="selectBig">
-          <option value="">Seleccione</option>
+        <select id="selectProblemaSocial" name="" class="selectBig Vacio">
+          <option value="Seleccione">Seleccione</option>
           <option value="">Conflictos organizacionales</option>
           <option value="">Defensa de derechos</option>
           <option value="">Incumplimiento de acuerdo</option>
@@ -161,8 +161,8 @@
       <div class="row">
         <div class="col-4">
           <label for="">Organizacion demandante</label>
-          <select class="selectMedium" name="" id="">
-            <option value="">Seleccione</option>
+          <select class="selectMedium Vacio" name="" id="selectOrgDemandantes">
+            <option value="Seleccione">Seleccione</option>
             <option value="">Artesanos</option>
             <option value="">Comerciantes</option>
             <option value="">Empresarios</option>
@@ -187,20 +187,20 @@
         </div>
         <div class="col-5">
           <label for="">Nombre de organizacion</label>
-          <input style="width: 300px;" type="text" value="" placeholder="Nombre especifico de la organizacion">
+          <input id="textNombreOrg1" class="Vacio" style="width: 300px;" type="text" value="" placeholder="Nombre especifico de la organizacion">
         </div>
 
         <div class="col-3">
           <label for="">Tipo</label>
-          <input style="width: 250px;" type="text" value="">
+          <input id="textTipo1" class="Vacio"  style="width: 250px;" type="text" value="">
         </div>
       </div>
 
       <div class="row">
         <div class="col-4">
           <label for="">Organizacion demandante</label>
-          <select class="selectMedium" name="" id="">
-            <option value="">Seleccione</option>
+          <select class="selectMedium " name="" id="">
+            <option value="Seleccione">Seleccione</option>
             <option value="">Artesanos</option>
             <option value="">Comerciantes</option>
             <option value="">Empresarios</option>
@@ -237,8 +237,8 @@
       <div class="row">
         <div class="col-4">
           <label for="">Organizacion demandada</label>
-          <select class="selectMedium" name="" id="">
-            <option value="">Seleccione</option>
+          <select class="selectMedium Vacio" name="" id="selectOrgDemandada">
+            <option value="Seleccione">Seleccione</option>
             <option value="">Artesanos</option>
             <option value="">Comerciantes</option>
             <option value="">Empresarios</option>
@@ -263,20 +263,20 @@
         </div>
         <div class="col-5">
           <label for="">Nombre de organizacion</label>
-          <input style="width: 300px;" type="text" value="" placeholder="Nombre especifico de la organizacion">
+          <input id="textNombreOrg2" class="Vacio" style="width: 300px;" type="text" value="" placeholder="Nombre especifico de la organizacion">
         </div>
 
         <div class="col-3">
           <label for="">Tipo</label>
-          <input style="width: 250px;" type="text" value="">
+          <input id="textTipo2" class="Vacio" style="width: 250px;" type="text" value="">
         </div>
       </div>
 
       <div class="row">
         <div class="col-4">
           <label for="">Repartición Demandada:</label>
-          <select class="selectMedium" name="" id="">
-            <option value="">Seleccione</option>
+          <select class="selectMedium Vacio" name="" id="selectRepartDemandada">
+            <option value="Seleccione">Seleccione</option>
             <option value="">S.M.G.I.</option>
             <option value="">S.M.A.F.</option>
             <option value="">S.M.D.C.T.</option>
@@ -296,7 +296,7 @@
         </div>
         <div class="col-8">
           <label for="">Detallar</label>
-          <input class="inputBig" type="text" value="" placeholder="Especificar la Direccion, Unidad o Comision ">
+          <input id="textDetallar" class="inputBig Vacio" type="text" value="" placeholder="Especificar la Direccion, Unidad o Comision ">
         </div>
       </div>
   </div>
@@ -307,8 +307,8 @@
       <div class="row">
         <div class="col">
           <label for="">Estado del conflicto</label>
-          <select class="selectMedium" name="" id="">
-            <option value="">Seleccione</option>
+          <select class="selectMedium Vacio" name="" id="selectEstadConflic">
+            <option value="Seleccione">Seleccione</option>
             <option value="">Conflicto activo</option>
             <option value="">Conflicto latente</option>
             <option value="">Conflicto resuelto</option>
@@ -316,8 +316,8 @@
         </div>
         <div class="col">
           <label for="">Momento del Conflicto</label>
-          <select class="selectMedium" name="" id="">
-            <option value="">Seleccione</option>
+          <select class="selectMedium Vacio" name="" id="selectMonetoConflic">
+            <option value="Seleccione">Seleccione</option>
             <option value="">Fase temprana</option>
             <option value="">Fase de escalamiento</option>
             <option value="">Fase de crisis</option>
@@ -329,8 +329,8 @@
       <div class="row">
         <div class="col">
           <label for="">Grado de complejidad</label>
-          <select class="selectBig" name="" id="">
-            <option value="">Seleccione</option>
+          <select class="selectBig Vacio" name="" id="selectGrado">
+            <option value="Seleccione">Seleccione</option>
             <option value="">Muy Grave</option>
             <option value="">Profundamente enrarizados</option>
             <option value="">Grave</option>
@@ -346,8 +346,8 @@
             <label for="">¿QUE SE ESTA HACIENDO O QUE ACCIONES REALIZO EL GAMEA PARA PREVENIR O RESOLVER EL CONFLICTO</label>
           </div>
           <div class="col-12">
-            <select class="selectBig" name="" id="">
-              <option value="">Seleccione</option>
+            <select class="selectBig Vacio" name="" id="selectAccionesGamea">
+              <option value="Seleccione">Seleccione</option>
               <option value="">Cuarto Intermedio</option>
               <option value="">Firma de convenio</option>
               <option value="">Mesa de trabajo</option>
@@ -364,8 +364,8 @@
             <label for="">¿QUE SE ESTA HACIENDO O QUE ACCIONES REALIZO LA/S ORG. SOCIAL PARA PREVENIR O RESOLVER EL CONFLICTO</label>
           </div>
           <div class="col-12">
-            <select class="selectBig" name="" id="">
-              <option value="">Seleccione</option>
+            <select class="selectBig Vacio" name="" id="selectAccionesOrgSocial">
+              <option value="Seleccione">Seleccione</option>
               <option value="">Asamblea rechaza la propuesta de resolución</option>
               <option value="">Bloqueo</option>
               <option value="">Busca apoyo de otras organizaciones</option>
@@ -382,7 +382,7 @@
             <label for="">DETALLE DE LAS REPARTICIONES MUNICIPALES/GOB. DEPT/GOB. CENTRAL</label>
           </div>
           <div class="col-12">
-            <input type="text" value="">
+            <input id="textDetalleRepart" class="Vacio" type="text" value="">
           </div>
         </div>
         <div class="row">
@@ -390,7 +390,7 @@
             <label for="">DETALLE DE FUNCIONARIO RESPONSABLE</label>
           </div>
           <div class="col-12">
-            <input type="text" value="">
+            <input id="textFuncionario" class="Vacio" type="text" value="">
           </div>
         </div>
 
@@ -403,8 +403,8 @@
            <div class="row">
              <div class="col-12">
                <label for="">ACTORES</label>
-               <select class="selectMedium" name="" id="">
-                <option value="">Seleccione</option>
+               <select class="selectMedium Vacio" name="" id="selctActores">
+                <option value="Seleccione">Seleccione</option>
                 <option value="">Bases</option>
                 <option value="">Dirigentes</option>
                 <option value="">Comité de bases</option>
@@ -415,12 +415,12 @@
            <div class="row">
              <div class="col">
                <label for="">NOMBRE Y APELLIDO</label>
-               <input type="text" value="">
+               <input id="textNombre" class="Vacio" type="text" value="">
              </div>
              <div class="col">
               <label for="">CARGO</label>
-              <select class="selectMedium" name="" id="">
-                <option value="">Seleccione</option>
+              <select class="selectMedium Vacio" name="" id="selectCargo">
+                <option value="Seleccione">Seleccione</option>
                 <option value="">Strio. Gral.</option>
                 <option value="">M. Directiva</option>
                 <option value="">Base</option>
@@ -430,23 +430,23 @@
            <div class="row">
              <div class="col">
                <label for="">ORGANIZACION</label>
-               <input type="text" value="">
+               <input id="textOrganizacion" class="Vacio" type="text" value="">
              </div>
              <div class="col">
               <label for="">Nº DE CELULAR</label>
-              <input type="text" value="">
+              <input id="textCelular" class="Vacio" type="text" value="">
              </div>
            </div>
 
            <div class="row">
             <div class="col">
               <label for="">POSICION</label>
-              <input type="text" value="">
+              <input id="textPosicion" class="Vacio" type="text" value="">
             </div>
             <div class="col">
               <label for="">TIPO DE LIDER</label>
-              <select class="selectMedium" name="" id="">
-                <option value="">Seleccione</option>
+              <select class="selectMedium Vacio" name="" id="selectTipoLider">
+                <option value="Seleccione">Seleccione</option>
                 <option value="">Proclive al dialogo</option>
                 <option value="">Radical</option>
               </select>
@@ -460,7 +460,8 @@
           <div class="row" style="justify-content: center;">
             <div class="col-8" >
               <label>Contraseña Responsable del registro</label>
-              <input type="password" class="inputSmall">
+              <input id="textContraseña" type="password" class="inputSmall Vacio">
+              <label id="registrador" for="">Juan Fernandez</label>
               <button id="buttonReg" type="button" >Registrar</button>
             </div>
           </div>
