@@ -35,16 +35,38 @@ function validarCampo2(e){
 function validarLongitud(input){
  if(input.value.length > 0){
     input.style.borderColor='blue'
+    input.classList.remove("Vacio");
  }else{
     input.style.borderColor='red'
+    input.classList.add("Vacio");
  }  
+
+ verificarErrores()
+ ? buttonReg.setAttribute("disabled", "true")
+ : buttonReg.removeAttribute("disabled");
+
 }
 
 function validarOpcion(input){
     console.log(input)
     if(input.value.length > 0){
         input.style.borderColor='red'
+        input.classList.add("Vacio");
      }else{
         input.style.borderColor='blue'
+        input.classList.remove("Vacio");
      }  
+
+     verificarErrores()
+     ? buttonReg.setAttribute("disabled", "true")
+     : buttonReg.removeAttribute("disabled");
 }
+
+function verificarErrores() {
+    let errores = document.getElementsByClassName("Vacio");
+    if (errores.length > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
