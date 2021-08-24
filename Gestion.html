@@ -26,6 +26,157 @@
       </nav>
       <h1>Formulario de registro de conflictos sociales</h1>
 
+
+<!-- 4. Gestion del conflicto -->
+    <label class="groupName" for="">4. Gestion del conflicto</label>
+
+   
+
+    <div class="containerStyle" id="container">
+        <table class="table">
+            <thead class="table-dark">
+              <td>
+                Numero
+              </td>
+              <td>
+                Codigo
+              </td>
+              <td>
+                Fecha
+              </td>
+              <td>
+                Que esta haciendo el GAMEA
+              </td>
+              <td>
+                Que esta haciendo la Org. Social
+              </td>
+              <td>
+                Detalle de las reparticiones
+              </td>
+              <td>
+                Detalle de Responsable
+              </td>       
+            </thead>
+            <tbody>
+              <td>
+                1
+              </td>
+              <td>
+                CF-1
+              </td>
+              <td>
+                10/08/2021
+              </td>
+              <td>
+               Reunion de acercamiento
+              </td>
+              <td>
+               Asamblea rechazada la propuesta de resolucion
+              </td>
+              <td>
+                Direccion de Atencion Ciudadana
+              </td>
+              <td>
+               Felix
+              </td>
+            </tbody>
+          </table> 
+          <h4 style="margin-left: 40%;";>Añadir Gestion</h4>
+        <div class="row">
+          <div class="col">
+            <label for="">Estado del conflicto</label>
+            <select class="selectMedium Vacio" name="" id="selectEstadConflic">
+              <option value="Seleccione">Seleccione</option>
+              <option value="">Conflicto activo</option>
+              <option value="">Conflicto latente</option>
+              <option value="">Conflicto resuelto</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="">Momento del Conflicto</label>
+            <select class="selectMedium Vacio" name="" id="selectMonetoConflic">
+              <option value="Seleccione">Seleccione</option>
+              <option value="">Fase temprana</option>
+              <option value="">Fase de escalamiento</option>
+              <option value="">Fase de crisis</option>
+              <option value="">Fase de desescalamiento</option>
+              <option value="">Fase de diálogo</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="">Grado de complejidad</label>
+            <select class="selectBig Vacio" name="" id="selectGrado">
+              <option value="Seleccione">Seleccione</option>
+              <option value="">Muy Grave</option>
+              <option value="">Profundamente enrarizados</option>
+              <option value="">Grave</option>
+              <option value="">Manejable</option>
+              <option value="">Leve</option>
+            </select>
+          </div>
+          </div>
+  
+  
+          <div class="row">
+            <div class="col-12">
+              <label for="">¿QUE SE ESTA HACIENDO O QUE ACCIONES REALIZO EL GAMEA PARA PREVENIR O RESOLVER EL CONFLICTO</label>
+            </div>
+            <div class="col-12">
+              <select class="selectBig Vacio" name="" id="selectAccionesGamea">
+                <option value="Seleccione">Seleccione</option>
+                <option value="">Cuarto Intermedio</option>
+                <option value="">Firma de convenio</option>
+                <option value="">Mesa de trabajo</option>
+                <option value="">Reunión de acercamiento</option>
+                <option value="">Reunión interinstitucional</option>
+                <option value="">Reunión Reparticiones GAMEA</option>
+                <option value="">Se derivó a otra repartición</option>
+                <option value="">Se solicitó información a otra repartición</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label for="">¿QUE SE ESTA HACIENDO O QUE ACCIONES REALIZO LA/S ORG. SOCIAL PARA PREVENIR O RESOLVER EL CONFLICTO</label>
+            </div>
+            <div class="col-12">
+              <select class="selectBig Vacio" name="" id="selectAccionesOrgSocial">
+                <option value="Seleccione">Seleccione</option>
+                <option value="">Asamblea rechaza la propuesta de resolución</option>
+                <option value="">Bloqueo</option>
+                <option value="">Busca apoyo de otras organizaciones</option>
+                <option value="">Firma de convenio</option>
+                <option value="">Huelga de hambre</option>
+                <option value="">Marcha</option>
+                <option value="">Seguimiento al cumplimiento de acuerdos</option>
+                <option value="">Vigilia</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label for="">DETALLE DE LAS REPARTICIONES MUNICIPALES/GOB. DEPT/GOB. CENTRAL</label>
+            </div>
+            <div class="col-12">
+              <input id="textDetalleRepart" class="Vacio" type="text" value="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <label for="">DETALLE DE FUNCIONARIO RESPONSABLE</label>
+            </div>
+            <div class="col-12">
+              <input id="textFuncionario" class="Vacio" type="text" value="">
+            </div>
+          </div>
+  
+          <button style="margin-left: 40%; width: 100px;" id="buttonReg" type="button">Añadir</button>
+        </div>   
+      </div>
+
+
 <!-- 1. grupo datos generales -->
 
 <label class="groupName" for="">1. Datos Generales</label>
@@ -47,8 +198,8 @@
         <option value="">Barrio/Zona/Urbanización</option>
         <option value="">Comunidad</option>
         <option value="">Distrito</option>
-        <option value="Interdistritos">Interdistritos</option>
-        <option value="Intermunicipal">Intermunicipal</option>
+        <option value="">Interdistritos</option>
+        <option value="">Intermunicipal</option>
       </select>
     </div>
     <div class="col-2">
@@ -301,102 +452,7 @@
       </div>
   </div>
 
-  <!-- 4. Gestion del conflicto -->
-    <label class="groupName" for="">4. Gestion del conflicto</label>
-  <div class="containerStyle" id="container">
-      <div class="row">
-        <div class="col">
-          <label for="">Estado del conflicto</label>
-          <select class="selectMedium Vacio" name="" id="selectEstadConflic">
-            <option value="Seleccione">Seleccione</option>
-            <option value="">Conflicto activo</option>
-            <option value="">Conflicto latente</option>
-            <option value="">Conflicto resuelto</option>
-          </select>
-        </div>
-        <div class="col">
-          <label for="">Momento del Conflicto</label>
-          <select class="selectMedium Vacio" name="" id="selectMonetoConflic">
-            <option value="Seleccione">Seleccione</option>
-            <option value="">Fase temprana</option>
-            <option value="">Fase de escalamiento</option>
-            <option value="">Fase de crisis</option>
-            <option value="">Fase de desescalamiento</option>
-            <option value="">Fase de diálogo</option>
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <label for="">Grado de complejidad</label>
-          <select class="selectBig Vacio" name="" id="selectGrado">
-            <option value="Seleccione">Seleccione</option>
-            <option value="">Muy Grave</option>
-            <option value="">Profundamente enrarizados</option>
-            <option value="">Grave</option>
-            <option value="">Manejable</option>
-            <option value="">Leve</option>
-          </select>
-        </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-12">
-            <label for="">¿QUE SE ESTA HACIENDO O QUE ACCIONES REALIZO EL GAMEA PARA PREVENIR O RESOLVER EL CONFLICTO</label>
-          </div>
-          <div class="col-12">
-            <select class="selectBig Vacio" name="" id="selectAccionesGamea">
-              <option value="Seleccione">Seleccione</option>
-              <option value="">Cuarto Intermedio</option>
-              <option value="">Firma de convenio</option>
-              <option value="">Mesa de trabajo</option>
-              <option value="">Reunión de acercamiento</option>
-              <option value="">Reunión interinstitucional</option>
-              <option value="">Reunión Reparticiones GAMEA</option>
-              <option value="">Se derivó a otra repartición</option>
-              <option value="">Se solicitó información a otra repartición</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <label for="">¿QUE SE ESTA HACIENDO O QUE ACCIONES REALIZO LA/S ORG. SOCIAL PARA PREVENIR O RESOLVER EL CONFLICTO</label>
-          </div>
-          <div class="col-12">
-            <select class="selectBig Vacio" name="" id="selectAccionesOrgSocial">
-              <option value="Seleccione">Seleccione</option>
-              <option value="">Asamblea rechaza la propuesta de resolución</option>
-              <option value="">Bloqueo</option>
-              <option value="">Busca apoyo de otras organizaciones</option>
-              <option value="">Firma de convenio</option>
-              <option value="">Huelga de hambre</option>
-              <option value="">Marcha</option>
-              <option value="">Seguimiento al cumplimiento de acuerdos</option>
-              <option value="">Vigilia</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <label for="">DETALLE DE LAS REPARTICIONES MUNICIPALES/GOB. DEPT/GOB. CENTRAL</label>
-          </div>
-          <div class="col-12">
-            <input id="textDetalleRepart" class="Vacio" type="text" value="">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <label for="">DETALLE DE FUNCIONARIO RESPONSABLE</label>
-          </div>
-          <div class="col-12">
-            <input id="textFuncionario" class="Vacio" type="text" value="">
-          </div>
-        </div>
-
-      </div>   
-    </div>
-
+ 
      <!-- 5- Mapeo de actores clave -->
      <label class="groupName" for="">5. Mapeo de actores clave</label>
      <div class="containerStyle" id="container">
@@ -455,20 +511,7 @@
     </div>
    
 
- <!-- 5- Registro -->
-    <div id="container" style="margin-top: 10px;margin-bottom: 10px; ">
-          <div class="row" style="justify-content: center;">
-            <div class="col-8" >
-              <label>Contraseña Responsable del registro</label>
-              <input id="textContraseña" type="password" class="inputSmall Vacio">
-              <label id="registrador" for="">Juan Fernandez</label>
-              <button id="buttonReg" type="button">Registrar</button>
-            </div>
-          </div>
-    </div>
-
-
 
 </body>
-<script src="/script.js"></script>
+<script src="/script2.js"></script>
 </html>

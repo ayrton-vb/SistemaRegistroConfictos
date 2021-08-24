@@ -3,6 +3,7 @@
 const selectArea = document.getElementById('selectArea'),
     selectAmbito = document.getElementById('selectAmbito'),
     selectDistrito = document.getElementById('selectDistrito'),
+    selectInterDistrito = document.getElementById('selectInterDistrito')
     textZona = document.getElementById('textZona'),
     textDistMuni = document.getElementById('textDistMuni'),
     textConflicto = document.getElementById('textConflicto'),
@@ -11,7 +12,27 @@ const selectArea = document.getElementById('selectArea'),
       
 function initApp(){
     buttonReg.disabled = true,
+    selectInterDistrito.disabled = true,
     registrador.style.display = 'none';
+}
+   
+buttonReg.addEventListener('click',link);
+function link(){
+    window.open('http://127.0.0.1:5500/Lista.html')
+}
+
+selectAmbito.addEventListener('blur', inter)
+
+function inter(e){
+    inter2(this)
+}
+
+function inter2(input){
+    if(input.value == "Interdistritos" || input.value == "Intermunicipal" ){
+        selectInterDistrito.disabled = false; 
+    }else{
+        selectInterDistrito.disabled = true; 
+    }
 }
 
 document.addEventListener('DOMContentLoaded', initApp)
@@ -144,8 +165,14 @@ function validarLongitud(input){
 function validarOpcion(input){
     console.log(input)
     if(input.value.length > 0){
-        input.style.borderColor='red'
-        input.classList.add("Vacio");
+
+        if(input.value == "Interdistritos" || input.value == "Intermunicipal"){
+            input.style.borderColor='blue'
+            input.classList.remove("Vacio");
+        }else{
+            input.style.borderColor='red'
+            input.classList.add("Vacio");
+        }
      }else{
         input.style.borderColor='blue'
         input.classList.remove("Vacio");
