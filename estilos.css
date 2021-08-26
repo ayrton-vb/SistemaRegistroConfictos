@@ -1,5 +1,10 @@
 h1{
     text-align: center;
+    color: #03c2fc;
+}
+h2{
+    text-align: center;
+    color: #03c2fc;
 }
 
 #container{
@@ -51,10 +56,11 @@ input{
     width: 90px;
 }
 
-h1{
-    color: #03c2fc;
-}
 
 .selectMedium{
     width: 200px;
+}
+
+.D{
+    position:absolute;
 }
