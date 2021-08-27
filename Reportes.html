@@ -6,6 +6,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Resueltos',     50],
+          ['Activos',  10]
+        ]);
+
+        var options = {
+          title: 'Conflictos Totales'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Tecnico', 'Conflictos Resuelto', 'Conflictos Activos'],
+          ['Tecnico 1', 30, 10],
+          ['Tecnico 2', 50, 1],
+          ['Tecnico 3', 10, 15],
+          ['Tecnico 4', 20, 2]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Conflictos por tecnicos',
+            subtitle: 'Conflictos Sociales',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
+
     <title>Document</title>
 </head>
 <body>
@@ -18,8 +70,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="#">Reportes</a>
               <a class="nav-link" href="http://127.0.0.1:5500/Lista.html">Listas</a>
+              <a class="nav-link" href="#">Reportes</a>
             </div>
           </div>
         </div>
@@ -29,68 +81,275 @@
 <!-- 1. grupo datos generales -->
 
 
-<div class="container">
-  <div style="border: solid 1px red;"  class="row text-center">
-    <label for="">1. Mapa Distritos</label>
-    <div style="border: solid 1px blue; height: 600px; position: relative;" class="col-6" >
-        <div style="padding-right: 300px;">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/alto/1x/d-1.png" alt="">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/alto/1x/d-2.png" alt="">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/alto/1x/d-3.png" alt="">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/medio/1x/d-4.png" alt="">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/medio/1x/d-5.png" alt="">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/medio/1x/d-6.png" alt="">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/medio/1x/d-7.png" alt="">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/alto/1x/d-8.png" alt="">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/alto/1x/d-9.png" alt="">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/alto/1x/d-10.png" alt="">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/alto/1x/d-11.png" alt="">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/bajo/1x/d-12.png" alt="">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/bajo/1x/d-13.png" alt="">
-          <img class="D" height="600px" style="border: solid 1px green;" src="/imagenes/bajo/1x/d-14.png" alt="">
+<div class="container" style="border: solid 1px #03c2fc;" >
+  <div   class="row text-center">
+    <h4>1. Mapa Distritos</h4>
+    <div style="height: 100%; position: relative;" class="col-6" >
+        <div style="padding-right: 500px;">
+          <label>Escala</label>
+          <select>
+            <option value="">Mes Actual</option>
+            <option value="">Trimestre</option>
+            <option value="">Anual</option>
+          </select>
+          <img class="D" height="960px" src="/imagenes/alto/1x/d-1.png" alt="">
+          <img class="D" height="960px"src="/imagenes/alto/1x/d-2.png" alt="">
+          <img class="D" height="960px"  src="/imagenes/alto/1x/d-3.png" alt="">
+          <img class="D" height="960px" src="/imagenes/medio/1x/d-4.png" alt="">
+          <img class="D" height="960px" src="/imagenes/medio/1x/d-5.png" alt="">
+          <img class="D" height="960px" src="/imagenes/bajo/1x/d-6.png" alt="">
+          <img class="D" height="960px" src="/imagenes/medio/1x/d-7.png" alt="">
+          <img class="D" height="960px" src="/imagenes/alto/1x/d-8.png" alt="">
+          <img class="D" height="960px" src="/imagenes/alto/1x/d-9.png" alt="">
+          <img class="D" height="960px" src="/imagenes/alto/1x/d-10.png" alt="">
+          <img class="D" height="960px" src="/imagenes/alto/1x/d-11.png" alt="">
+          <img class="D" height="960px" src="/imagenes/bajo/1x/d-12.png" alt="">
+          <img class="D" height="960px" src="/imagenes/bajo/1x/d-13.png" alt="">
+          <img class="D" height="960px" src="/imagenes/bajo/1x/d-14.png" alt="">
         </div>
     </div>
-    <div style="border: solid 1px blue;" class="col-6">
-      <h3>Nivel de conflicto</h3> 
-      <div id="container">
-        <table class="table">
-          <thead class="table-dark">
-            <td>
-              Color
-            </td>
-            <td>
-              Riesgo
-            </td>
-          </thead>
-          <tbody>
-            <tr>
+    <div  class="col-6">
+      <di>
+        <h5>Nivel de conflicto</h5> 
+        <div id="container">
+          <table class="table">
+            <thead class="table-dark">
               <td>
-                <input style="background-color: #e51b20;" type="text">
+                Color
               </td>
               <td>
-                Grave
+                Riesgo
               </td>
-            </tr>
-            <tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input style="background-color: #e51b20;" type="text">
+                </td>
+                <td>
+                  Grave
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input style="background-color: #f18317;" type="text">
+                </td>
+                <td>
+                  Medio
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input style="background-color: #57afe3;" type="text">
+                </td>
+                <td>
+                  Bajo
+                </td>
+              </tr>
+            
+            </tbody>
+          </table>  
+      </div>
+      </di>
+      <di>
+        <h4>Conflicto por Distrito</h4> 
+        <div id="container">
+          <table class="table">
+            <thead class="table-dark">
               <td>
-                <input style="background-color: #f18317;" type="text">
+                Distrito
               </td>
               <td>
-                Medio
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input style="background-color: #57afe3;" type="text">
+                Riesgo
               </td>
               <td>
-                Bajo
+                Detalles
               </td>
-            </tr>
-          
-          </tbody>
-        </table>  
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  D-1
+                </td>
+                <td>
+                  <input style="background-color: #57afe3;" type="text">
+                </td>
+                <td>
+                  <a href="">Ver</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                 D-2
+                </td>
+                <td>
+                  <input style="background-color: #f18317;" type="text">
+                </td>
+                <td>
+                  <a href="">Ver</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  D-3
+                </td>
+                <td>
+                  <input style="background-color: #57afe3;" type="text">
+                </td>
+                <td>
+                  <a href="">Ver</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  D-4
+                </td>
+                <td>
+                  <input style="background-color: #57afe3;" type="text">
+                </td>
+                <td>
+                  <a href="">Ver</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  D-5
+                </td>
+                <td>
+                  <input style="background-color: #57afe3;" type="text">
+                </td>
+                <td>
+                  <a href="">Ver</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  D-6
+                </td>
+                <td>
+                  <input style="background-color: #57afe3;" type="text">
+                </td>
+                <td>
+                  <a href="">Ver</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  D-7
+                </td>
+                <td>
+                  <input style="background-color: #e51b20;" type="text">
+                </td>
+                <td>
+                  <a href="http://127.0.0.1:5500/ListaD-7.html">Ver</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  D-8
+                </td>
+                <td>
+                  <input style="background-color: #e51b20;" type="text">
+                </td>
+                <td>
+                  <a href="">Ver</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  D-9
+                </td>
+                <td>
+                  <input style="background-color: #57afe3;" type="text">
+                </td>
+                <td>
+                  <a href="">Ver</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  D-10
+                </td>
+                <td>
+                  <input style="background-color: #57afe3;" type="text">
+                </td>
+                <td>
+                  <a href="">Ver</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  D-11
+                </td>
+                <td>
+                  <input style="background-color: #57afe3;" type="text">
+                </td>
+                <td>
+                  <a href="">Ver</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  D-12
+                </td>
+                <td>
+                  <input style="background-color: #f18317;" type="text">
+                </td>
+                <td>
+                  <a href="">Ver</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  D-13
+                </td>
+                <td>
+                  <input style="background-color: #f18317;" type="text">
+                </td>
+                <td>
+                  <a href="">Ver</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  D-14
+                </td>
+                <td>
+                  <input style="background-color: #57afe3;" type="text">
+                </td>
+                <td>
+                  <a href="">Ver</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>  
+      </div>
+      </di>
+  </div>
+  <h4>2.Nivel de Eficiencia</h4>
+  
+  <div class="row text-center">
+    <div class="col-12 ">
+      <label>Escala</label>
+      <select>
+        <option value="">Mes Actual</option>
+        <option value="">Trimestre</option>
+        <option value="">Anual</option>
+      </select>
+        <div  id="piechart" style="width: 900px; height: 500px;margin-left: 200px;"></div>
     </div>
+    <div  class="col-12 ">
+      <label>Escala</label>
+      <select>
+        <option value="">Mes Actual</option>
+        <option value="">Trimestre</option>
+        <option value="">Anual</option>
+      </select>
+      <div id="columnchart_material" style="width: 800px; height: 500px; margin-left: 200px;"></div>
+    </div>
+    
+   
+</div>
   </div>
 </div>
 
